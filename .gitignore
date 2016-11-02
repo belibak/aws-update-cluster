@@ -1,5 +1,6 @@
 Data_Optimization_Prototype
-local_settings.py
-salesforce_settings.py
-github.key
-ssh_config
+*local_settings.py
+*salesforce_settings.py
+*github.key
+*ssh_config
+
