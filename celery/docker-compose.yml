@@ -1,0 +1,14 @@
+#django container
+version: "2"
+services:
+  
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /app/./celery.sh
+    volumes:
+      - .:/app
+    restart: always
+        
+      

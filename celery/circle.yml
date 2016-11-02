@@ -1,0 +1,15 @@
+machine:
+  timezone:
+    Europe/Minsk
+  services:
+    - docker
+  
+  
+dependencies:
+  pre:
+    - pip install awscli 
+    
+test:
+  pre:
+    #- docker build -t celery -f Dockerfile-celery .
+    - bash run-on-circleci.sh

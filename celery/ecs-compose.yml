@@ -1,0 +1,6 @@
+#django container
+version: "2"
+services:  
+  celery:
+    image: 144049946307.dkr.ecr.us-west-2.amazonaws.com/dop-celery:latest
+    command: /app/./celery.sh
